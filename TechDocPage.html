@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="styleSheet" href="style.css">	
+<title>Uploading to GitHub</title>
+</head>
+<body>
+	<nav id="navbar">
+	<header id="header"><b>Uploading to GitHub using Windows</b></header> <br>
+	<ul>
+		<li><a class="nav-link" href="#What_is_Github?_An_Introduction">What is GitHub? An Introduction</a></li>
+		<li><a class="nav-link" href="#Why_is_GitHub_Important?">Why is GitHub Important?</a></li>
+		<li><a class="nav-link" href="#First_Steps">First Steps</a></li>
+		<li><a class="nav-link" href="#Setting_Up_Github">Setting Up GitHub</a></li>
+		<li><a class="nav-link" href="#Using_the_Command_Line">Using the Command Line</a></li>
+		<li><a class="nav-link" href="#Creating_a_Repository">Creating a Repository</a></li>
+		<li><a class="nav-link" href="#Document_Uploading">Document Uploading</a></li>
+		<li><a class="nav-link" href="#Looking_for_More?">Looking for More?</a></li>
+</nav>
+<main id="main-doc">
+	<section class="main-section" id="What_is_Github?_An_Introduction">
+		<header><b>What is GitHub? An Introduction</b></header>
+		<article>
+			<p>According to <a href="https://www.w3schools.com/whatis/whatis_github.asp" target="_blank" alt="This links to w3schools"><em>w3schools</em></a>, GitHub is, "a code hosting platform for collaboration and version control. Github lets you and others work together on projects." Basically, it is a site where computer coders can store, share, and collaborate on coding projects. 
+		</article>
+	</section>
+	<section class="main-section" id="Why_is_GitHub_Important?">
+		<header><b>Why is GitHub Important?</b></header>
+		<article>
+			<p>GitHub is important for several reasons. Some reasons are:
+				<ol>
+					<li>It makes it easy for you and your partners to contribute to and manage coding projects.</li>
+					<li>It showcases your work, which makes it easy for companies looking to hire to see your skills</li>
+					<li>It allows you to easily track any changes made to your projects.</li>
+				</ol>
+		</article>
+	</section>
+	<section class="main-section" id="First_Steps">
+		<header><b>First Steps</b></header>
+		<article>
+			<p> The first thing you should do is go to <a href="https://github.com/" target="_blank" alt="This links to the GitHub site">GitHub.com</a> and create a profile for yourself.</p>
+			<p> The next step is to, make sure your code files are saved in a folder by themselves and not with all other files. Example: Folder name: CodingProjects (it's better if the folder is one name as spaces are encoded) Folder: TechDocument. If you are not careful, it is possible to upload all files from your C drive onto GitHub which could leave you open to hacking.</p>
+			<p>Finally, you will need <a href="https://gitforwindows.org/" target="_blank" alt="This link takes you to Git for Windows to install Git Bash">Git Bash</a> installed on your computer. (Windows Users)</p>
+		</article>
+	</section>
+	<section class="main-section" id="Setting_Up_Github">
+		<header><b>Setting up Github</b></header>
+		<article>
+			<p> If this is your first time working with Git Hub, you will need to configure it. </p>
+			<p>In Git Bash configure your name and email by typing these commands:<br>
+        <code>
+          $ git config --global user.name "Your Name"</code><br>
+				<code>
+          $ git config --global user.email  <i>youremail.com</i></code>
+			 </p>
+		</article>
+	</section>
+	<section class="main-section" id="Using_the_Command_Line">
+		<header><b>Using the Command Line</b></header>
+		<article>
+			<p>For the purpose of this document, we will be uploading projects using the Command Line.<br> The first step in using the Command Line is to launch Git Bash.</p>
+			<p>Next, we want to make sure we are uploading from the exact project location so we are going to (Change Directory) <em><b>cd</em></b> into it. You should already have your file/files stored in a separate folder unique to your project, for example: <b>cd Documents/Projects/ProjectName.</b></p>
+			<p> Next, type in <b>ls</b> to list all files in that directory. This way you can also make sure you are not sending sensitive information or the wrong file to GitHub.</p>
+		</article>
+	</section>
+	<section class="main-section" id="Creating_a_Repository">
+		<header><b>Creating a Repository</b></header>
+		<article> <p> Before we go any further, make sure you create a repository on GitHub.</p>
+			<ol>
+				<li>Under "Repository" heading, click on "New".</li><br>
+				<li>Name your document (do not include spaces. You can put a - in between two words instead of a space.)</li><br>
+				<li>Write a description (not necessary but helpful to others looking at your work)</li><br>
+				<li>Hit "Create Repository"</li>
+			</ol>
+			<p>That's it, you've created your repository. Next, let's upload your document.</p>
+		</article>
+	</section>
+	<section class="main-section" id="Document_Uploading">
+		<header><b>Document Uploading</b></header>
+		<article><p>Now that you have your Repository set up, your Command Line open, and you have changed directories into your project, you need to upload.</p>
+			<ol>
+				<li>Initialize the local directory as a Git repository.
+          <code><b>$ git init</b></li></code><br>
+				<li>Add the files in your repository.
+          <code><b>$ git add. </b></code><br>(the . after the add will add all files from that directory.  If you only want certain files you can type ls to see which files you would like to add, then type in those files).</li><br>
+				<li>Now you are ready to commit the files you have staged. 
+				<code><b>$ git commit -m "First commit"</b><code><br>
+				*This commits the changes and prepares them to be pushed into your repository.</li><br>
+			<p>Next, go back to your GitHub project repository's Quick Set Up page. Click the clipboard in the section that says <i>...or push an existing repository from the command line</i></p><br>
+				<li>Double check that the files you want are included.<br>
+     <code>$ git status</code><br>
+					(Files ready are in green.)
+				<li>Push the file to your local repository.<br>
+          <code>$ git push (right click paste)</code></li>
+				<li>Go to your GitHub and check that your files have been uploaded.</li>
+
+		</article>
+	</section>
+	<section class="main-section" id="Looking_for_More?">
+		<header><b>Looking for More?</b></header>
+		<article> <p>Resources used for this document/ more help click on links below:<br>
+			<a href="https://help.github.com/en/articles/adding-an-existing-project-to-github-using-the-command-line" target="_blank" alt="Help for GitHub">Adding an Existing Project to GitHub Using the Command Line</a><br>
+			<a href="https://gist.github.com/mindplace/b4b094157d7a3be6afd2c96370d39fad" target="_blank" alt="Pushing First Project">Pushing your First Project</a><br>
+			<a href="https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners" target="_blank" alt="Intro to Git and GitHub">An Intro to Git and GitHub for Beginners</a>
+		</p>
+		</article>
+	</section>
+</main>
+
+
+</body>
+</html>
